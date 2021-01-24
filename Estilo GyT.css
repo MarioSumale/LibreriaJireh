@@ -1,0 +1,295 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+/*
+.fondo {
+	background-color:#FFF;
+	}
+.fondencabezado{
+	background:#06C;
+	
+	}
+	
+.menuencabezado{
+	padding:15px;
+}
+
+
+.menuencabezado li{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	color:#FFF;
+	list-style:none;
+	display:inline-block;
+	position:relative;
+	text-align:justify;
+
+}
+
+.menuencabezado li img{
+
+	width:20px;
+	height:20px;
+	object-fit:cover;
+}
+
+.marginunico {
+	margin-left: 80px;
+}
+
+.Submenu li{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;
+	padding:inherit;
+}
+
+.Submenu li a{
+	text-decoration:none;
+	color:#FFF;
+}
+.Submenu div{
+	
+	border-left:ridge;
+	border-right:ridge;
+}
+
+.Submenu li div:hover {
+	background:#FC3;
+}
+.menu2 ul{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	display:inline-block;
+	position:relative;
+	list-style:none;
+}
+.menu2 li{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	position:absolute;
+}
+
+*/
+
+.navegacion{
+	/*width:1000px;
+	margin: 0px ;*/
+	background:#009;
+	line-height:none;	
+}
+.marginunico {
+	margin-left: 50px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFF;
+	margin-right:10px;
+}
+.navegacion ul{
+	list-style:none;
+}
+.menu >li{
+	position:relative;
+	display:inline-block;
+}
+.menu >li >a {
+	display:block;
+	padding:15px 20px;
+	/*color:#FFF;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:end;
+	text-decoration:none;
+}
+/*.menu li a:hover{
+	background:#CC3;
+	transition:all 0.3;
+}*/
+.menu li img{
+
+	width:20px;
+	height:20px;
+	object-fit:cover;
+	
+}
+.Submenu ul{
+	list-style:none;
+}
+.Submenu >li{
+	position:relative;
+	display:inline-block;
+}
+.Submenu >li >a{
+	display:block;
+	padding:15px 20px;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+}
+.Submenu li a:hover{
+	background:#CC3;
+	transition:all 0.3;
+}
+.navegacion1{
+	background:#FFF;
+	line-height:none;
+	height:20px;
+}
+.navegacion1 ul{
+	list-style:none;
+}
+.menu2{
+	border-bottom: 1px solid #999;
+}
+.menu2 li{
+	position:relative;
+	display:inline-block;
+	text-align:center;
+}
+.menu2 >li >a{
+	display:block;
+	padding:15px 20px;
+	color:#006;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.menu2 li a:hover{
+	background:#CCC;
+	transition:all 0.3;
+}
+.submenu{
+	position:absolute;
+/*	background-color:#FFF;*/
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 1.0s;
+	
+}
+.submenu ul {
+	list-style:none;
+	line-height:none;
+}
+.submenu li {
+	position:relative;
+	display:block;
+	text-align:center;
+}
+.submenu >li>a{
+	display:block;
+	padding:15px 20px;
+	color:#006;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font:bolder;
+	font-size:16px;
+	text-decoration:none;
+	text-transform:capitalize;
+}
+.menu2 li:hover .submenu{
+	visibility:visible;
+	opacity:1;
+}
+.quitarfondo{
+	background:#FFF;
+}
+.menu2 img{
+	width:225px;
+	height:60px;
+}
+.submenu >li>:hover{
+	border-right:#000;
+	border-radius:10%;
+}
+/*slider para la transicion de las imaganes*/
+.navegacion2{
+	width:auto;
+	height:auto;
+	padding:60px 0px;
+}
+.slider {
+	width: 100%;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.slider ul {
+	display:flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*segunda parte del menu*/
+.navegacion3 {
+	border-bottom:1px solid #CCC;
+	padding:0px;
+
+}
+.navegacion3 ul{
+	list-style:none;
+}
+
+.navegacion3 li{
+	margin-top:-20px;
+	margin-left:-75px;
+	margin-right:-200px;
+	margin-bottom:0px;
+	padding:0;
+	display:inline-block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:center;	
+}
+.columnas{
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;	
+}
+
+.titulonav3{
+	text-transform:uppercase;
+	color:#009;
+	font-family:"Times New Roman", Times, serif;
+	text-align:center;
+	font-size:18px;
+}
+.menu3 img{
+	margin:0px;
+	padding:0px;
+	width:10%;
+	height:10%;
+	object-fit:cover;
+}
+.menu3 a{
+	text-decoration:none;
+	color:#000;
+}
